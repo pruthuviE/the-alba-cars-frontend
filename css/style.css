@@ -1,11 +1,54 @@
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('../fonts/poppins-regular-webfont.woff2') format('woff2'),
+        url('../fonts/poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'helvetica_neuemedium_extended';
+    src: url('../fonts/helvetica_neue_medium_extended-webfont.woff2') format('woff2'),
+        url('../fonts/helvetica_neue_medium_extended-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'interregular';
+    src: url('../fonts/inter-variablefont_slntwght-webfont.woff2') format('woff2'),
+        url('../fonts/inter-variablefont_slntwght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
     background-color: #000000;
+    font-family: 'poppinsregular', Arial, sans-serif;
 }
 
 .navbar {
     height: 118px;
     color: #FFF;
     background-color: #000;
+}
+
+.navbar-brand {
+    padding-left: 21px;
+    font-family: 'interregular';
+    font-weight: 700;
+
+}
+
+.navbar-brand img {
+    margin-right: 27px;
+}
+
+.navbar-brand span {
+    color: #8C6FDE;
 }
 
 .navbar .navbar-toggler {
@@ -41,21 +84,217 @@ body {
     color: #FFF;
 }
 
-.mechanic-title {
-    background-color: #3A5040;
+.main-content h3 {
+    font-family: 'helvetica_neuemedium_extended';
+}
+
+.service-card {
+    background-color: #3F3F3F;
+    border-radius: 9px;
+    margin-top: 41px;
+}
+
+.service-card--title {
     border-radius: 9px;
 }
 
-.mechanic-title h4 {
+.service-card--title .icon {
+    width: 154;
+    height: 144px;
+    border-radius: 9px;
+    ;
+    padding-left: 30px;
+    padding-right: 35px;
+    padding-top: 34px;
+    padding-bottom: 34px;
+}
+
+.service-card--title:hover .icon {
+    box-shadow: 0px 0px 10px 0px #000;
+}
+
+.service-card--title h4 {
+    font-family: 'poppinsregular';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
 }
 
-.icon {
-    width: 154.06px;
-    height: 143.44px;
+.service-card--body {
+    border-radius: 0px 0px 9px 9px;
+    padding-left: 64px;
+    padding-right: 45px;
+    padding-top: 29px;
+    padding-bottom: 36px;
+}
+
+.service-card--item {
+    position: relative;
+    background-color: #2F2F2F;
+    height: 55px;
+    padding-left: 37px;
+    padding-right: 15px;
+    border-radius: 5px;
+    margin-bottom: 17px;
+    font-weight: 400;
+}
+
+.service-card--item--number {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 41px;
+    height: 39px;
+    background: #3F3F3F;
+    border: 1px solid #BBBBBB;
+    border-radius: 5px;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.service-card--item--title {
+    font-size: 30px;
+}
+
+.service-card--item--input {
+    height: 40px;
+    width: 300px;
+    background-color: #3F3F3F;
+    padding: 5px 22px;
+    border: 0;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #BDBDBD;
+}
+
+.service-card--item span {
+    margin: auto;
+}
+
+.mechanic--title {
+    background-color: #3A5040;
+}
+
+.mechanic--title .icon {
     background: #7D9683;
+    box-shadow: 9px 0px 0px 0px #3A5040;
+}
+
+.accessories--title .icon {
+    background-color: #B1BB77;
+    box-shadow: 9px 0px 0px 0px #666F36;
+}
+
+.accessories--title {
+    transition: all 0.5s ease;
+    background-position: right bottom;
+    background: linear-gradient(to left, #575757 50%, #666F36 50%) right;
+    background-size: 200% 100%;
+}
+
+.accessories--title:hover {
+    background-position: left bottom;
+}
+
+.bodywork--title .icon {
+    background-color: #AF9CE2;
+    box-shadow: 9px 0px 0px 0px #502BB8;
+}
+
+.bodywork--title {
+    transition: all 0.5s ease;
+    background-position: right bottom;
+    background: linear-gradient(to left, #575757 50%, #502BB8 50%) right;
+    background-size: 200% 100%;
+}
+
+.bodywork--title:hover {
+    background-position: left bottom;
+}
+
+.service-card--title:hover .icon {
+    box-shadow: 0px 0px 10px 0px #000;
+}
+
+
+.interior--title .icon {
+    background-color: #E1658A;
+    box-shadow: 9px 0px 0px 0px #D42358;
+}
+
+
+.interior--title {
+    transition: all 0.5s ease;
+    background-position: right bottom;
+    background: linear-gradient(to left, #575757 50%, #D42358 50%) right;
+    background-size: 200% 100%;
+}
+
+.interior--title:hover {
+    background-position: left bottom;
+}
+
+.cleaning--title .icon {
+    background-color: #798EBA;
+    box-shadow: 9px 0px 0px 0px #264178;
+}
+
+.cleaning--title {
+    transition: all 0.5s ease;
+    background-position: right bottom;
+    background: linear-gradient(to left, #575757 50%, #264178 50%) right;
+    background-size: 200% 100%;
+}
+
+.cleaning--title:hover {
+    background-position: left bottom;
+}
+
+.accont-detail {
+    margin-top: 39px;
+    margin-bottom: 49px;
+}
+
+.accont-detail-card {
+    background-color: #2F2F2F;
+    min-height: 55px;
     border-radius: 9px;
-    padding: 34px 35px 34px 30px;
+    margin-bottom: 18px;
+}
+
+.accont-detail-card {
+    padding: 6px;
+    padding-left: 24px;
+}
+
+.accont-detail-card:hover {
+    box-shadow: 0 0 10px 0 #000;
+    transition: all 0.2s ease;
+}
+
+.accont-detail-card .icon {
+    background-color: #8C6FDE;
+    padding: 10px 12px;
+    height: 43px;
+    width: 48px;
+    border-radius: 10px;
+}
+
+.accont-detail-card p {
+    font-family: 'interregular';
+    font-size: 24px;
+    color: #B8B8B8;
+}
+
+.accont-detail-card span {
+    color: #FFF;
+}
+
+.chart {
+    background: #2F2F2F;
+    border-radius: 16px;
 }
