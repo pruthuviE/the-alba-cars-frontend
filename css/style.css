@@ -52,8 +52,101 @@ body {
 }
 
 .navbar .navbar-toggler {
-    top: 0.25rem;
+    top: 2.25rem;
     right: 1rem;
+}
+
+.search-bar {
+    width: 572px;
+    height: 53px;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.clear-btn {
+    position: absolute;
+    transform: translate(0, -50%);
+    right: 50px;
+    top: 50%;
+    border-right: 1px solid #eee;
+    border-radius: 0;
+
+}
+
+.search-btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+
+}
+
+.search-bar input {
+    height: 53px;
+    background: #2F2F2F;
+    border-radius: 6px;
+    font-size: 20px;
+    color: #FFF;
+}
+
+
+.earnings-comp {
+    font-family: 'interregular';
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    padding: 12px 38px;
+    box-sizing: border-box;
+    color: #FFF;
+    background: #000;
+    background-clip: padding-box;
+    border: solid 10px transparent;
+    border-radius: 1em;
+    margin-right: 70px;
+}
+
+.earnings-comp::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -2px;
+    border-radius: 6px;
+    background: linear-gradient(to right, #D42358, #302EBE, #4961B7, #8C6FDE);
+}
+
+.earnings-comp p::before {
+    content: "";
+    position: absolute;
+    left: -35px;
+    top: -35px;
+    background: url('../imgs/icons/Ellipse1.png') no-repeat;
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+}
+
+.earnings-comp p::after {
+    content: "";
+    position: absolute;
+    right: -35px;
+    bottom: -35px;
+    background: url('../imgs/icons/Ellipse2.png') no-repeat;
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+}
+
+.earnings-comp p span {
+    color: #D42358;
 }
 
 .nav {
@@ -65,6 +158,10 @@ body {
     width: 70px;
     height: 70px;
     margin: auto;
+}
+
+.nav .nav-link:hover {
+    background-color: #d4225788;
 }
 
 .nav .nav-link.active {
@@ -96,6 +193,7 @@ body {
 
 .service-card--title {
     border-radius: 9px;
+    cursor: pointer;
 }
 
 .service-card--title .icon {
@@ -137,6 +235,11 @@ body {
     border-radius: 5px;
     margin-bottom: 17px;
     font-weight: 400;
+}
+
+.service-card--item:hover {
+    box-shadow: 0 0 10px 0 #000;
+    transition: all 0.2s ease;
 }
 
 .service-card--item--number {
@@ -297,4 +400,33 @@ body {
 .chart {
     background: #2F2F2F;
     border-radius: 16px;
+}
+
+@media (max-width: 1024px) {
+    .earnings-comp {
+        margin-right: 0;
+    }
+
+    .main-content {
+        margin-right: 0;
+    }
+
+    .service-card--item--input {
+        width: 150px;
+    }
+
+    .nav {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 786px) {
+    .sidebar {
+        width: 100%;
+    }
+
+    p {
+        font-size: 16px !important;
+        overflow-wrap: anywhere !important;
+    }
 }

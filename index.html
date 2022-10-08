@@ -13,24 +13,28 @@
     <header class="navbar navbar-dark sticky-top flex-md-nowrap p-0 ">
         <a class="navbar-brand fs-6" href="#"> <img src="imgs/logo.png" alt=""> Welcome back , <span>CAR SHOP
                 !</span></a>
-        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div><input class="form-control form-control-dark rounded-0 border-0" type="text" placeholder="Search"
+        <div class="search-bar d-none d-md-block">
+            <input class="form-control form-control-dark rounded-0 border-0" type="text" placeholder="Search"
                 aria-label="Search">
-            <button type="clear" class="btn bg-transparent" style="margin-left: -40px; z-index: 100;">
-                <i class="fa fa-times"></i>
+            <button type="clear" class="btn bg-transparent clear-btn" style="margin-left: -40px; z-index: 100;">
+                <img src="imgs/icons/close.png" alt="">
+            </button>
+            <button type="clear" class="btn bg-transparent search-btn" style="margin-left: -40px; z-index: 100;">
+                <img src="imgs/icons/search.png" alt="">
             </button>
         </div>
-        <div class="navbar-nav">
-            <div class="nav-item text-nowrap">
-                <p>
+        <div class="navbar-nav  d-none d-md-block">
+            <div class="nav-item text-nowrap earnings-comp">
+                <p class="m-0">
                     July Earnings <br>AED <span>500,000 </span>
                 </p>
             </div>
         </div>
+        <button class="navbar-toggler d-xl-none collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
     </header>
 
     <div class="container-fluid">
@@ -117,7 +121,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6">
                         <div class="service-card accessories">
                             <div class="service-card--title accessories--title d-flex">
                                 <div class="icon">
@@ -127,7 +131,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6">
                         <div class="service-card bodywork">
                             <div class="service-card--title bodywork--title d-flex">
                                 <div class="icon">
@@ -137,7 +141,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6">
                         <div class="service-card interior">
                             <div class="service-card--title interior--title d-flex">
                                 <div class="icon">
@@ -147,7 +151,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6">
                         <div class="service-card cleaning">
                             <div class="service-card--title cleaning--title d-flex">
                                 <div class="icon">
@@ -162,7 +166,7 @@
                     <div class="col">
                         <h3 class="accont-detail">Your account details </h3>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-xl-6">
                                 <div class="accont-detail-card">
                                     <div class="accont-detail-card--title d-flex">
                                         <p class="m-0 my-auto"><span>NRF : </span>001214455888</p>
@@ -209,7 +213,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-xl-6">
                                 <div class="accont-detail-card">
                                     <div class="accont-detail-card--title d-flex">
                                         <p class="m-0 my-auto"><span>Workshop name : </span>Car workshop</p>
@@ -266,7 +270,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-4 chart">
+                    <div class="col-lg-6 col-xl-4 chart">
                         <canvas class="my-4 w-100" id="myChart" height="400"></canvas>
                     </div>
                 </div>
